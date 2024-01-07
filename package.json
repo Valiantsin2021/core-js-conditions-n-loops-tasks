@@ -4,8 +4,9 @@
   "description": "Core JS conditions and loops task",
   "main": "index.js",
   "scripts": {
-    "test": "npm run lint && mocha",
+    "test": "npm run lint && mocha --reporter mocha-multi-reporters --reporter-options configFile=config.json",
     "lint": "node node_modules/eslint/bin/eslint.js ./src",
+    "posttest": "allure generate --clean",
     "lint:fix": "node node_modules/eslint/bin/eslint.js ./src --fix"
   },
   "repository": {
@@ -21,7 +22,13 @@
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-prettier": "^5.0.1",
     "mocha": "^10.2.0",
+    "mocha-allure-reporter": "^1.4.0",
+    "mocha-junit-reporter": "^2.2.1",
+    "mocha-multi-reporters": "^1.5.1",
     "prettier": "^3.0.3"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.25.0"
   },
   "bugs": {
     "url": "https://github.com/rolling-scopes-school/coreJs-conditions-n-loops-tasks/issues"
