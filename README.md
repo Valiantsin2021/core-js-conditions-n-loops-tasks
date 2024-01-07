@@ -1,4 +1,6 @@
 # Core JS conditions and loops task
+Report page:
+[Allure report](https://valiantsin2021.github.io/core-js-conditions-n-loops-tasks/)
 
 :warning: **Please note that you mustn't open PRs that contains the answers to this repo!**
 
